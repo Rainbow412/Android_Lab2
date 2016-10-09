@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/wrapANDcenter"
+        android:text="@string/title"
+        android:textSize="@dimen/titleSize"
+        android:layout_marginTop="@dimen/titleTop"
+        android:textColor="@color/titleBlack"/>
+
+    <ImageView
+        style="@style/wrapANDcenter"
+        android:src="@mipmap/sysu"
+        android:layout_marginTop="@dimen/imgTop"
+        android:layout_marginBottom="@dimen/imgBottom"
+        android:contentDescription="@string/sysu" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/inputLeft"
+        android:layout_marginRight="@dimen/inputRight"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user"
+                android:gravity="right"
+                android:textColor="@color/passwordBlack"
+                android:textSize="@dimen/inputSize"/>
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/userHint"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:gravity="right"
+                android:textColor="@color/passwordBlack"
+                android:textSize="@dimen/inputSize"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passwdHint"
+                android:inputType="textPassword" />
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        style="@style/wrapANDcenter"
+        android:id="@+id/type"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/radioTop">
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText1"
+            android:checked="true"
+            android:textSize="@dimen/radioTextSize"
+            android:layout_marginRight="@dimen/radioSpace"/>
+        <RadioButton
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText2"
+            android:textSize="@dimen/radioTextSize"
+            android:layout_marginRight="@dimen/radioSpace" />
+        <RadioButton
+            android:id="@+id/society"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText3"
+            android:textSize="@dimen/radioTextSize"
+            android:layout_marginRight="@dimen/radioSpace" />
+        <RadioButton
+            android:id="@+id/magager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText4"
+            android:textSize="@dimen/radioTextSize" />
+    </RadioGroup>
+
+    <LinearLayout
+        style="@style/wrapANDcenter"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/buttonTop">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonText1"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="@color/buttonText"
+            android:layout_marginRight="@dimen/buttonSpace"
+            android:background="@drawable/button" />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonText2"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="@color/buttonText"
+            android:background="@drawable/button" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="titleTop">20dp</dimen>
+
+    <dimen name="imgTop">20dp</dimen>
+    <dimen name="imgBottom">20dp</dimen>
+
+    <dimen name="inputSize">18sp</dimen>
+    <dimen name="inputLeft">20dp</dimen>
+    <dimen name="inputRight">20dp</dimen>
+    <dimen name="inputSpace">10dp</dimen>
+
+    <dimen name="radioTextSize">18sp</dimen>
+    <dimen name="radioSpace">10dp</dimen>
+    <dimen name="radioTop">20dp</dimen>
+
+    <dimen name="buttonTop">20dp</dimen>
+    <dimen name="buttonSpace">5dp</dimen>
+    <dimen name="buttonTextSize">18sp</dimen>
+    <dimen name="buttonR">10dp</dimen>
+    <dimen name="buttonTextTop">5dp</dimen>
+    <dimen name="buttonTextBottom">5dp</dimen>
+    <dimen name="buttonTextLeft">10dp</dimen>
+    <dimen name="buttonTextRight">10dp</dimen>
+</resources>
